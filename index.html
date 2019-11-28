@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Astronomy Quiz</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
 </head>
 <body>
     <header>
+        <h1>beginning page</h1>
         <h1>Astronomy Quiz</h1>
         <div class="score-and-question-number"></div>
     </header>
@@ -17,7 +18,7 @@
             <h2 class="welcome">Test your Astronomical knowledge</h2>
             <button class="begin-quiz-button">Begin Quiz!</button>
             <div class="main-form"></div>
-            <button type="button" id="restart">Restart</button>
+            <!-- <button type="button" id="restart">Restart</button> -->
         </div>
     </main>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -25,5 +26,53 @@
     <script src="store.js"></script>
     <script src="index1.js"></script> -->
 
+    <!--     Questions -->
+        <h1>questions</h1>
+        <div>
+        <form>
+        <h2>${currentQuestion.question}</h2>
+        ${answers}
+        <label for="answer-${currentAnswer}" class='col'>
+        <input type="radio" class="buttons" id="answer-${currentAnswer}" value="${currentAnswer}" name="answer"/>
+        <button type="submit" id="submitChoice">Submit</button>
+        
+        <h2>${currentQuestion.question}</h2>
+        ${answers}
+        <label for="answer-${currentAnswer}" class='col'>
+        <input type="radio" class="buttons" id="answer-${currentAnswer}" value="${currentAnswer}" name="answer"/>
+        <button type="submit" id="submitChoice">Submit</button>
+
+        <h2>${currentQuestion.question}</h2>
+        ${answers}
+        <label for="answer-${currentAnswer}" class='col'>
+        <input type="radio" class="buttons" id="answer-${currentAnswer}" value="${currentAnswer}" name="answer"/>
+        <button type="submit" id="submitChoice">Submit</button>
+
+        <h2>${currentQuestion.question}</h2>
+        ${answers}
+        <label for="answer-${currentAnswer}" class='col'>
+        <input type="radio" class="buttons" id="answer-${currentAnswer}" value="${currentAnswer}" name="answer"/>
+        <button type="submit" id="submitChoice">Submit</button>
+
+        <h2>${currentQuestion.question}</h2>
+        ${answers}
+        <label for="answer-${currentAnswer}" class='col'>
+        <input type="radio" class="buttons" id="answer-${currentAnswer}" value="${currentAnswer}" name="answer"/>
+        <button type="submit" id="submitChoice">Submit</button>
+        </form>
+        </div>
+        <h1>answer correct</h1>
+        ${answers}
+        <label for="answer-${currentAnswer}" class='col'>
+        <input type="radio" class="buttons" id="answer-${currentAnswer}" value="${currentAnswer}" name="answer"/>
+        <button type="submit" id="submitChoice">Submit</button>
+        <p class='correct'>You got it right!!</p>
+        <button type="button" id="next-question">Next</button>
+        <h1>answers incorrect</h1>
+        <p class='wrong'>You got it wrong!! The correct answer is ${correctAnswer}.</p>
+        <button type="button" id="next-question">Next</button>
+        <h1>results</h1>
+        <p class="final">Your final score is ${score}<p></p>
+        <button type="button" id="restart">Restart</button>
 </body>
 </html>
